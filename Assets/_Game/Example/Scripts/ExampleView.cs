@@ -10,7 +10,7 @@ public class ExampleView : MonoBehaviour
     [SerializeField] private TMP_Text _text;
 
     [SerializeField] private RectTransform _panelExample;
-    [SerializeField] private float _delayStarting;
+
     [SerializeField] private float _delayEnding;
     [SerializeField] private float _timeFade;
 
@@ -25,26 +25,19 @@ public class ExampleView : MonoBehaviour
 
     public void DisplayExample(string text)
     {
-        StartCoroutine(OpenPanel(text));
-    }
-
-    private IEnumerator OpenPanel(string text)
-    {
         _text.text = text;
         _text.alpha = 0;
-        yield return new WaitForSeconds(_delayStarting);
-        _panelExample.DOSizeDelta(new Vector2(_text.preferredWidth, _panelExample.sizeDelta.y), _timeFade).OnComplete(() => _text.DOFade(1, _timeFade));
+        _panelExample.DOSizeDelta(new Vector2(_text.preferredWidth, _panelExample.sizeDelta.y), _timeFade);
     }
 
-    private IEnumerator ClosePanel()
+    public void DisplayResponse(string value)
+    {
+        _text.text = _text.text.Replace(_symbol, $" {value} ");
+    }
+
+    public IEnumerator ClosePanel()
     {
         yield return new WaitForSeconds(_delayEnding);
-        _text.DOFade(0, _timeFade).OnComplete(() => _panelExample.DOSizeDelta(_startScalePanel, _timeFade));
-    }
-
-    public void OnCorrect()
-    {
-        _text.text = _text.text.Replace(_symbol, "  ");
-        StartCoroutine(ClosePanel());
+        _panelExample.DOSizeDelta(_startScalePanel, _timeFade);
     }
 }

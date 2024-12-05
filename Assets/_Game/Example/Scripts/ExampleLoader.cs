@@ -10,10 +10,23 @@ public class ExampleLoader : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Delay());
+        _gameStates.OnChangeGameState += OnChangeGameState;
     }
 
-    private IEnumerator Delay()
+    private void OnDestroy()
+    {
+        _gameStates.OnChangeGameState -= OnChangeGameState;
+    }
+
+    private void OnChangeGameState(EGameState gameState)
+    {
+        if (gameState != EGameState.Loading)
+            return;
+
+        StartCoroutine(Starting());
+    }
+
+    private IEnumerator Starting()
     {
         _animatorController.OnStarted();
         yield return new WaitForSeconds(_delayStarting);

@@ -213,7 +213,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 805502582}
   _panelExample: {fileID: 179084680}
-  _delayStarting: 0.7
   _delayEnding: 2
   _timeFade: 1
   _symbol: X
@@ -416,6 +415,7 @@ GameObject:
   - component: {fileID: 556737320}
   - component: {fileID: 556737318}
   - component: {fileID: 556737319}
+  - component: {fileID: 556737321}
   - component: {fileID: 556737316}
   - component: {fileID: 556737315}
   - component: {fileID: 556737314}
@@ -523,9 +523,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameStates: {fileID: 1709090951}
-  _postProcessVolume: {fileID: 519420033}
-  _maxIntensity: 35
-  _speedIntensity: 1.5
   _exampleView: {fileID: 179084683}
   _examplesData: {fileID: 11400000, guid: 4bdf5fef39c04b64fb7c6167a36bc3e5, type: 2}
   _errorResponse: 2
@@ -534,8 +531,7 @@ MonoBehaviour:
   - {fileID: 1783543989}
   - {fileID: 2055736292}
   - {fileID: 2031640964}
-  _animatorController: {fileID: 556737320}
-  _delayEnding: 2
+  _delayClearButtons: 3
 --- !u!114 &556737319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +560,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1752082016}
+--- !u!114 &556737321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556737313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323e5435a3cc6e241a19c4fed5f7a629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameStates: {fileID: 1709090951}
+  _animatorController: {fileID: 556737320}
+  _postProcessVolume: {fileID: 519420033}
+  _maxIntensity: 25
+  _speedIntensity: 1.5
+  _delayEnding: 2
+  _timeEnding: 3
 --- !u!1 &589178587
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,9 +741,9 @@ MonoBehaviour:
   m_fontSize: 134.73
   m_fontSizeBase: 134.73
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 135
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -759,7 +774,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 28.681427, y: 31.928894, z: 28.343323, w: 25.206978}
+  m_margin: {x: 35.569595, y: 31.928894, z: 33.853867, w: 25.206978}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1157,7 +1172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4281479730
+      value: 3962712626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1334,7 +1349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4281479730
+      value: 3962712626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1527,7 +1542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4281479730
+      value: 3962712626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1643,8 +1658,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
+      propertyPath: m_text
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4281479730
+      value: 3962712626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

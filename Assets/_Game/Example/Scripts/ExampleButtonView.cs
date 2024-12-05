@@ -25,12 +25,15 @@ public class ExampleButtonView : MonoBehaviour
     [SerializeField] private AnimationCurve _curve;
     [SerializeField] private float _duraction;
 
-    private RectTransform _paneExample;
+    private ExampleView _exampleView;
+    private RectTransform _rectTransformText;
 
     public void Initialize(string value, ExampleView exampleView)
     {
         _text.text = value;
-        _paneExample = exampleView.Panel;
+        _exampleView = exampleView;
+
+        _rectTransformText = _text.GetComponent<RectTransform>();
     }
 
     public void Click()
@@ -43,10 +46,11 @@ public class ExampleButtonView : MonoBehaviour
         _button.interactable = isActive;
     }
 
-    public void Restart()
+    public void Clear()
     {
+        _rectTransformText.anchoredPosition = Vector2.zero;
         _image.DOColor(Color.white, _timeFade);
-        _text.DOFade(0, _timeFade);
+        _text.gameObject.SetActive(true);
     }
 
     public void DisplayCorrectButton(bool isCorrect, float position)
@@ -55,14 +59,12 @@ public class ExampleButtonView : MonoBehaviour
 
         if (isCorrect)
         {
-            _text.alpha = 0;
+            _text.gameObject.SetActive(false);
             SpawnValue(position);
         }
         else
         {
-            var rectTransform = _text.GetComponent<RectTransform>();
-
-            rectTransform.DOAnchorPos(new Vector2(rectTransform.anchoredPosition.x - _offset, rectTransform.anchoredPosition.y), _timeFade);
+            _rectTransformText.DOAnchorPos(new Vector2(_rectTransformText.anchoredPosition.x - _offset, _rectTransformText.anchoredPosition.y), _timeFade);
         }
     }
 
@@ -72,7 +74,7 @@ public class ExampleButtonView : MonoBehaviour
         value.GetComponent<ExampleValue>().Initialize(_text.text);
 
         value.anchoredPosition = _rectTransform.anchoredPosition;
-        StartCoroutine(Move(_rectTransform.anchoredPosition, new Vector2(_paneExample.anchoredPosition.x + position, _paneExample.anchoredPosition.y), value));
+        StartCoroutine(Move(_rectTransform.anchoredPosition, new Vector2(_exampleView.Panel.anchoredPosition.x + position, _exampleView.Panel.anchoredPosition.y), value));
     }
 
     private IEnumerator Move(Vector2 start, Vector2 target, RectTransform value)
@@ -94,6 +96,9 @@ public class ExampleButtonView : MonoBehaviour
 
             yield return null;
         }
+
+        Destroy(value.gameObject);
+        _exampleView.DisplayResponse(_text.text);
     }
 }
 
