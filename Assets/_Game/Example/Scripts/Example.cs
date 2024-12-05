@@ -83,6 +83,7 @@ public class Example : MonoBehaviour
         _gameStates.SetGameState(EGameState.Ending);
         StartCoroutine(_exampleView.ClosePanel());
         StartCoroutine(ClearButtons());
+        _exampleView.DisplayResponse();
     }
 
     private IEnumerator ClearButtons()

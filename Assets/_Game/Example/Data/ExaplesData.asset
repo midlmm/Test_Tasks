@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: ExaplesData
   m_EditorClassIdentifier: 
   _exampleConfigs:
-  - Example: 3 + X / 3 = 7
+  - Example: 3+ X /3 = 7
     CorrectResponse: 12
-    PositionResponseX: -110
-  - Example: 4 + X / 2 = 9
+    PositionResponseX: -95
+  - Example: 4+ X /2 = 9
     CorrectResponse: 10
-    PositionResponseX: -120
-  - Example: 3.1 + X * 2.5 = 6.2
+    PositionResponseX: -95
+  - Example: 3.1+   X  *2.5 = 6.2
     CorrectResponse: 1.22
-    PositionResponseX: -175
-  - Example: 15 / 42 * X = 28
+    PositionResponseX: -140
+  - Example: 15/42*  X   = 28
     CorrectResponse: 78.4
-    PositionResponseX: 135
+    PositionResponseX: 50

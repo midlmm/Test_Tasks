@@ -30,9 +30,9 @@ public class ExampleView : MonoBehaviour
         _panelExample.DOSizeDelta(new Vector2(_text.preferredWidth, _panelExample.sizeDelta.y), _timeFade);
     }
 
-    public void DisplayResponse(string value)
+    public void DisplayResponse()
     {
-        _text.text = _text.text.Replace(_symbol, $" {value} ");
+        _text.text = _text.text.Replace(_symbol, "  ");
     }
 
     public IEnumerator ClosePanel()

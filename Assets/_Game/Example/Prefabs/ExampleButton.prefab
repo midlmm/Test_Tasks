@@ -130,7 +130,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 25.765396, y: 27.57045, z: 27.758774, w: 28.862259}
+  m_margin: {x: 12.166809, y: 27.57045, z: 12.405548, w: 28.862259}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -203,34 +203,11 @@ MonoBehaviour:
   _text: {fileID: 8569685387152330907}
   _colorCorrect: {r: 0.7028302, g: 1, b: 0.722808, a: 1}
   _colorWrong: {r: 0.990566, g: 0.62144, b: 0.62144, a: 1}
-  _timeFade: 1
+  _timeFade: 2
   _offset: 300
   _prefabValue: {fileID: 3593136584400938882, guid: 2604d5b8e00d15c4595daa950e2aae7e, type: 3}
-  _curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 7.052724
-      outSlope: 7.052724
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.044476327
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _duraction: 1
+  _timeSlerp: 1.8
+  _speedSlerp: 0.005
 --- !u!114 &6369764797789066856
 MonoBehaviour:
   m_ObjectHideFlags: 0

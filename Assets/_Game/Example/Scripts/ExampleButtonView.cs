@@ -22,8 +22,8 @@ public class ExampleButtonView : MonoBehaviour
     [SerializeField] private float _offset;
 
     [SerializeField] private RectTransform _prefabValue;
-    [SerializeField] private AnimationCurve _curve;
-    [SerializeField] private float _duraction;
+    [SerializeField] private float _timeSlerp;
+    [SerializeField] private float _speedSlerp;
 
     private ExampleView _exampleView;
     private RectTransform _rectTransformText;
@@ -81,24 +81,14 @@ public class ExampleButtonView : MonoBehaviour
     {
         float timePassed = 0f;
 
-        Vector2 end = target;
-
-        while (timePassed < _duraction)
+        while (timePassed < _timeSlerp)
         {
             timePassed += Time.deltaTime;
 
-            float linearT = timePassed / _duraction;
-            float heightT = _curve.Evaluate(linearT);
-
-            float height = Mathf.Lerp(0f, linearT, heightT);
-
-            value.anchoredPosition = Vector2.Lerp(start, end, linearT) + new Vector2(0f, height);
+            value.anchoredPosition = Vector3.Slerp(value.anchoredPosition, target, _speedSlerp);
 
             yield return null;
         }
-
-        Destroy(value.gameObject);
-        _exampleView.DisplayResponse(_text.text);
     }
 }
 

@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 200, y: 250}
+  m_SizeDelta: {x: 220, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &179084681
 MonoBehaviour:
@@ -738,12 +738,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 134.73
+  m_fontSize: 100
   m_fontSizeBase: 134.73
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 135
+  m_fontSizeMax: 100
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -774,7 +774,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 35.569595, y: 31.928894, z: 33.853867, w: 25.206978}
+  m_margin: {x: 35.569595, y: 27.249443, z: 33.853867, w: 25.206978}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1010,77 +1010,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752082015}
     m_Modifications:
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _duraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _panelExample
-      value: 
-      objectReference: {fileID: 179084680}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].time
-      value: -0.0007171631
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].value
-      value: 1.000946
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].inSlope
-      value: 0.25064468
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].inSlope
-      value: -0.0009453669
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].outSlope
-      value: 0.25064468
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].inWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].outSlope
-      value: -0.0009453669
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].outWeight
-      value: 0.057347484
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].tangentMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1764790948045159285, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5446012442264527731, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_Name
       value: ExampleButton (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5446012442264527731, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_Layer
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_Pivot.x
@@ -1108,11 +1040,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1161,18 +1093,6 @@ PrefabInstance:
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_fontSize
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_fontSizeMax
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 3962712626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1203,66 +1123,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752082015}
     m_Modifications:
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _duraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _panelExample
-      value: 
-      objectReference: {fileID: 179084680}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].time
-      value: -0.0007171631
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].value
-      value: 1.000946
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].inSlope
-      value: 0.25064468
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].inSlope
-      value: -0.0009453669
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].outSlope
-      value: 0.25064468
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].inWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].outSlope
-      value: -0.0009453669
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].outWeight
-      value: 0.057347484
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].tangentMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
     - target: {fileID: 5446012442264527731, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_Name
       value: ExampleButton (3)
@@ -1293,11 +1153,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1346,10 +1206,6 @@ PrefabInstance:
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 3962712626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1380,77 +1236,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752082015}
     m_Modifications:
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _duraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _panelExample
-      value: 
-      objectReference: {fileID: 179084680}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].time
-      value: -0.0007171631
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].value
-      value: 1.000946
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].inSlope
-      value: 0.25064468
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].inSlope
-      value: -0.0009453669
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].outSlope
-      value: 0.25064468
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].inWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].outSlope
-      value: -0.0009453669
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].outWeight
-      value: 0.057347484
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[0].tangentMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527355908776982928, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: _curve.m_Curve.Array.data[1].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1764790948045159285, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5446012442264527731, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_Name
       value: ExampleButton (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5446012442264527731, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_Layer
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_Pivot.x
@@ -1478,11 +1266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1531,18 +1319,6 @@ PrefabInstance:
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_fontSize
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_fontSizeMax
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569685387152330907, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 3962712626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1603,11 +1379,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 7908731240007285977, guid: acaf5368ae664184b8085b8daf3c5298, type: 3}
       propertyPath: m_LocalPosition.x
